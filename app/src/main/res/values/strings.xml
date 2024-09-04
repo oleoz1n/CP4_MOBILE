@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CP4_MOBILE</string>
+    <string name="compose">Compose</string>
+    <string name="fromEmail">From</string>
+    <string name="toEmail">To</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+
+    <string name="developers">Developers</string>
+    <string name="developersJaci">Jaci Teixeira Santos - RM99627</string>
+    <string name="developersLeonardo">Leonardo dos Santos Guerra - RM99738 </string>
+</resources>
