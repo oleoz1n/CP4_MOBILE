@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Ícone do remetente -->
+    <ImageView
+        android:id="@+id/senderIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/person_2"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="6dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Nome do remetente -->
+    <TextView
+        android:id="@+id/senderName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sender Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/senderIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Assunto do e-mail -->
+    <TextView
+        android:id="@+id/emailSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Email Subject"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/senderName"
+        app:layout_constraintTop_toBottomOf="@id/senderName"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Previa do e-mail -->
+    <TextView
+        android:id="@+id/emailSnippet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Email snippet goes here..."
+        android:textSize="12sp"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="@id/emailSubject"
+        app:layout_constraintTop_toBottomOf="@id/emailSubject"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
