@@ -28,9 +28,6 @@
         <activity android:name=".Developers"
             android:exported="false" />
 
-        <activity android:name=".EmailHome"
-            android:exported="false" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
