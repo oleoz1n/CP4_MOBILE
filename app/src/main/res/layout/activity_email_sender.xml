@@ -18,7 +18,8 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +29,7 @@
                 android:id="@+id/backButtonEmail"
                 android:layout_width="52dp"
                 android:layout_height="52dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="0dp"
                 android:background="#00FFFFFF"
                 android:scaleX="1.6"
                 android:scaleY="1.6"
@@ -39,49 +40,54 @@
                 android:id="@+id/textCompose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
                 android:fontFamily="@font/roboto"
                 android:text="@string/compose"
-                android:textColor="@color/black"
                 android:textSize="24sp" />
 
-            <ImageButton
-                android:id="@+id/attachButton"
-                android:layout_width="52dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginTop="4dp"
-                android:background="#00000000"
-                android:contextClickable="false"
-                android:scaleX="1.4"
-                android:scaleY="1.4"
-                app:srcCompat="@drawable/baseline_attachment_24"
-                tools:ignore="SpeakableTextPresentCheck" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-            <ImageButton
-                android:id="@+id/sendButton"
-                android:layout_width="52dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
-                android:background="#00000000"
-                android:scaleX="1.4"
-                android:scaleY="1.4"
-                android:src="@drawable/baseline_send_24"
-                tools:ignore="SpeakableTextPresentCheck" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/OptionsButton"
-                android:layout_width="52dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
-                android:background="#00FFFFFF"
-                android:scaleX="0.2"
-                android:scaleY="1.4"
-                android:src="@drawable/round_menu_24"
-                tools:ignore="SpeakableTextPresentCheck" />
+                <ImageButton
+                    android:id="@+id/attachButton"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="#00000000"
+                    android:contextClickable="false"
+                    android:scaleX="1.4"
+                    android:scaleY="1.4"
+                    app:srcCompat="@drawable/baseline_attachment_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/sendButton"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="#00000000"
+                    android:scaleType="center"
+                    android:scaleX="1.4"
+                    android:scaleY="1.4"
+                    android:src="@drawable/baseline_send_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/OptionsButton"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="#00000000"
+                    android:scaleX="1.4"
+                    android:scaleY="1.4"
+                    android:src="@drawable/round_menu_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
 
         </LinearLayout>
 
