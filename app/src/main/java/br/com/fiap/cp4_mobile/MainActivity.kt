@@ -5,11 +5,12 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var buttonAbrirCadastro: Button
+    private lateinit var btnDev: ExtendedFloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,8 +20,13 @@ class MainActivity : AppCompatActivity() {
 
         buttonAbrirCadastro = findViewById(R.id.btnEnviar)
         buttonAbrirCadastro.setOnClickListener{
-            val navegarEmailSender = Intent(this,EmailSender::class.java)
-            startActivity(navegarEmailSender)
+            val navegarHome = Intent(this,EmailHome::class.java)
+            startActivity(navegarHome)
+        }
+        btnDev = findViewById(R.id.fab_dev)
+        btnDev.setOnClickListener{
+            val navegarDevs = Intent(this,Developers::class.java)
+            startActivity(navegarDevs)
         }
     }
 

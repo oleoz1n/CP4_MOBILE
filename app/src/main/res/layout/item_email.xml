@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:padding="16dp">
 
-    <!-- Ícone do remetente -->
     <ImageView
         android:id="@+id/senderIcon"
         android:layout_width="40dp"
@@ -16,7 +15,6 @@
         tools:layout_editor_absoluteY="6dp"
         tools:ignore="MissingConstraints" />
 
-    <!-- Nome do remetente -->
     <TextView
         android:id="@+id/senderName"
         android:layout_width="0dp"
@@ -29,7 +27,6 @@
         app:layout_constraintStart_toEndOf="@id/senderIcon"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Assunto do e-mail -->
     <TextView
         android:id="@+id/emailSubject"
         android:layout_width="0dp"
@@ -40,7 +37,6 @@
         app:layout_constraintTop_toBottomOf="@id/senderName"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Previa do e-mail -->
     <TextView
         android:id="@+id/emailSnippet"
         android:layout_width="0dp"

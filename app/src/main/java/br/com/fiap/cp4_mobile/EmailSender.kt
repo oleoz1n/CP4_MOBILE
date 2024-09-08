@@ -17,7 +17,7 @@ class EmailSender : AppCompatActivity() {
 
         buttonVoltarHome = findViewById(R.id.backButtonEmail)
         buttonVoltarHome.setOnClickListener{
-            val navegarMain = Intent(this,MainActivity::class.java)
+            val navegarMain = Intent(this,EmailHome::class.java)
             startActivity(navegarMain)
         }
 

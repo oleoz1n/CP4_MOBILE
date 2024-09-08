@@ -23,7 +23,6 @@ class EmailAdapter(private val emailList: List<Email>) : RecyclerView.Adapter<Em
 
     override fun onBindViewHolder(holder: EmailViewHolder, position: Int) {
         val email = emailList[position]
-        // Defina os valores dos itens aqui, por exemplo:
         holder.senderName.text = email.senderName
         holder.emailSubject.text = email.subject
         holder.emailSnippet.text = email.snippet
